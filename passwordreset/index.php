@@ -80,15 +80,6 @@ if (!empty($_POST)) {
     return $result ;
   }
 
-  // function getDN(){
-  //   $ad = connect_AD();
-  //
-  //   $s = ldap_search($ad, "OU=Student,OU=Accounts,DC=PUHSD,DC=ORG", "mail=".$_POST['studentEmail']);
-  //   // echo(ldap_count_entries($ad, $s)."\n");
-  //   $info = ldap_get_entries($ad, $s);
-  //   return $info[0]['distinguishedname'][0];
-  // }
-
   function resetPassword($staffEmail, $staffPassword, $studentEmail){
     $password = generateRandomString(8);
 
